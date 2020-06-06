@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Minchang Sung' Hompage"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Minchang Sung"
@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "성민창"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "한양대학교 바이오로보틱스 연구실 석박사 통합과정"
-  location         : "대한민국 경기도 안산시 상록구 한양대학교 ERICA "
+  bio              : ""
+  location         : ""
   email            :
   links:
     - label: "tjdalsckd@gmail.com"
