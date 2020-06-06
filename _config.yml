@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "성민창의 홈페이지"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Minchang Sung"
+name                     : "성민창"
 description              : "연구노트"
 url                      :  "https://tjdalsckd.github.io"
 baseurl                  : ""
@@ -93,10 +93,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "성민창"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "로봇"
+  location         : "한양대학교 "
   email            :
   links:
     - label: "Email"
