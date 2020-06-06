@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "성민창의 홈페이지"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "성민창"
+name                     : "Minchang Sung"
 description              : "연구노트"
 url                      :  "https://tjdalsckd.github.io"
 baseurl                  : ""
