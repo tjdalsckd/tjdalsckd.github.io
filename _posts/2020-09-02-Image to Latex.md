@@ -1,5 +1,3 @@
-
-
 ---
 title: " 이미지를 Latex 문법으로 변환"
 tags:
