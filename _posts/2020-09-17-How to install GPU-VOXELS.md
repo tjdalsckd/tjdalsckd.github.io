@@ -7,6 +7,9 @@ tags:
   - LaTeX
 use_math: true
 Shell:      console, shell
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 # 1. 필요 라이브러리/ 드라이버 / 환경
