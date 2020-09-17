@@ -49,6 +49,11 @@ init 3 명령을 통해 gui모드를 종료하고 cui모드로 전환 이후 ctr
 cd /home/user/Downloads
 chmod 777 NVIDIA-Linux-x86_64-xxx.xxx.run
 ./NVIDIA-Linux-x86_64-xxx.xxx.run
+
+sudo apt-get install dkms nvidia-modprobe
+sudo lspci - k
+nvidia-smi
+
 ```
 # 3. ROS Kinetic 설치
 
@@ -69,6 +74,13 @@ chmod 777 cuda_10.0.130_410.48_linux.run
 ./cuda_10.0.130_410.48_linux.run
 ```
 설치 중 Nvidia Driver 설치는 No를 하고 다른 사항은 모두 Yes
+```shell
+gedit ~/.bashrc
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda/bin:$PATH
+source ~/.bashrc
+nvcc --version
+```
 
 # 4. cmake 최신버전 설치
 
@@ -81,6 +93,18 @@ make
 make install
 ```
 
+# 5. VTK 8.2 설치
+
+```shell
+wget https://www.vtk.org/files/release/8.2/VTK-8.2.0.tar.gz
+tar -zxvf VTK-8.2.0.tar.gz
+cd VTK-8.2.0
+mkdir build
+cd build
+cmake ..
+make
+make install
+```
 
 
 # 5. OpenNI2 설치
@@ -119,6 +143,11 @@ make install
 
 ```shell
 apt-get install cmake-qt-gui
+apt-get install libglew-dev
+sudo apt-get install qt5-default
+sudo rm /usr/lib/x86_64-linux-gnu/libGL.so
+sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
+
 git clone https://github.com/fzi-forschungszentrum-informatik/gpu-voxels.git
 cd gpu-voxels/
 mkdir build
@@ -126,6 +155,12 @@ cd build/
 cmake ..
 cmake-gui ..
 ```
-
+ENABLE_CUDA에 체크되어있는지 확인
 ![1](https://user-images.githubusercontent.com/53217819/93412302-ddbc8c80-f8d7-11ea-85c3-43837a1a6b4b.png)
+GLM_INCLUDE_DIR이 설정되어 있는지 확인
 ![2](https://user-images.githubusercontent.com/53217819/93412308-e319d700-f8d7-11ea-9400-83eaf178fae7.png)
+
+```shell
+export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels/models/
+
+```
