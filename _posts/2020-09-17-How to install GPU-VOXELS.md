@@ -155,9 +155,13 @@ cd build/
 cmake ..
 cmake-gui ..
 ```
+
 ENABLE_CUDA에 체크되어있는지 확인
+
 ![1](https://user-images.githubusercontent.com/53217819/93412302-ddbc8c80-f8d7-11ea-85c3-43837a1a6b4b.png)
+
 GLM_INCLUDE_DIR이 설정되어 있는지 확인
+
 ![2](https://user-images.githubusercontent.com/53217819/93412308-e319d700-f8d7-11ea-9400-83eaf178fae7.png)
 
 ```shell
