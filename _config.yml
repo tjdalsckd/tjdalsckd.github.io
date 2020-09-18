@@ -5,7 +5,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Minchang Sung
+title:            성민창 홈페이지
 tagline:          '연구노트 / 생각정리 / 공부'
 description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
 url:              https://tjdalsckd.github.io
