@@ -19,6 +19,7 @@ sitemap :
 * OpenNI2
 * PCL
 * ROS
+* BOOST
 * Ubuntu 16.04
 
 # 2. Nvidia Graphic Driver 설치
@@ -63,7 +64,7 @@ nvidia-smi
 ```shell
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
-# 3. CUDA 설치
+# 4. CUDA 설치
 https://developer.nvidia.com/cuda-10.0-download-archive 에서 Ubuntu 16.04의 Cuda 설치파일 다운
 
 ```shell
@@ -85,7 +86,7 @@ source ~/.bashrc
 nvcc --version
 ```
 
-# 4. cmake 최신버전 설치
+# 5. cmake 최신버전 설치
 
 ```shell
 wget https://cmake.org/files/v3.18/cmake-3.18.0.tar.gz
@@ -96,7 +97,19 @@ make
 make install
 ```
 
-# 5. VTK 8.2 설치
+
+# 6. Boost 최신버전 설치
+
+```shell
+wget https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.gz
+tar -zxvf boost_1_74_0.tar.gz
+cd boost_1_74_0
+sudo bash bootstrap.sh
+sudo bash b2.sh
+sudo bash b2.sh install
+```
+
+# 7. VTK 8.2 설치
 
 ```shell
 wget https://www.vtk.org/files/release/8.2/VTK-8.2.0.tar.gz
@@ -110,7 +123,7 @@ make install
 ```
 
 
-# 5. OpenNI2 설치
+# 8. OpenNI2 설치
 
 ```shell
 git clone https://github.com/occipital/OpenNI2.git
@@ -126,9 +139,11 @@ cd Bin/x64-Release/
 ./SimpleRead
 ```
 
-# 6. PCL 설치
+# 9. PCL 설치
 
 ```shell
+apt-get install libflann-dev
+sudo apt-get install g++ cmake cmake-gui doxygen mpi-default-dev openmpi-bin openmpi-common libeigen3-dev libboost-all-dev libvtk5.8-qt4 libvtk5.8 libqhull* libusb-dev libgtest-dev git-core freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev graphviz mono-complete qt-sdk libeigen3-dev
 sudo apt install libglew-dev
 sudo apt-get install libsqlite3-0 libpcap0.8  
 sudo apt-get install libpcap-dev
@@ -142,7 +157,7 @@ make
 make install
 ```
 
-# 6. GPU-VOXELS 설치
+# 10. GPU-VOXELS 설치
 
 ```shell
 apt-get install cmake-qt-gui
