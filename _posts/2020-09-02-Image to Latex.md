@@ -8,6 +8,7 @@ tags:
 use_math: true
 ---
 
+https://github.com/tjdalsckd/image2latex_mathpix
 
 Mathpix.com의 API를 사용하여 Snapshot 이미지를 Latex 문법으로 변환시키는 Python 프로그램입니다.
 
