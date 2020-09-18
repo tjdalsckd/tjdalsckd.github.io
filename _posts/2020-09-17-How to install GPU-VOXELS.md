@@ -12,7 +12,7 @@ sitemap :
   priority : 1.0
 ---
 
-# 1. 필요 라이브러리/ 드라이버 / 환경
+### 1. 필요 라이브러리/ 드라이버 / 환경
 * Nvidia Graphic Driver
 * CUDA 10.0 버전 이상
 * cmake 최신버전
@@ -22,7 +22,7 @@ sitemap :
 * BOOST
 * Ubuntu 16.04
 
-# 2. Nvidia Graphic Driver 설치
+### 2. Nvidia Graphic Driver 설치
 https://www.nvidia.com/Download/Find.aspx?lang=en-us 에서 자신의 그래픽 카드 종류와 Ubuntu 버전에 알맞는 드라이버 파일('NVIDIA-Linux-x86_64-xxx.xxx.run') 다운로드.
 
 ```shell
@@ -59,12 +59,12 @@ sudo lspci - k
 nvidia-smi
 
 ```
-# 3. ROS Kinetic 설치
+### 3. ROS Kinetic 설치
 
 ```shell
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
-# 4. CUDA 설치
+### 4. CUDA 설치
 https://developer.nvidia.com/cuda-10.0-download-archive 에서 Ubuntu 16.04의 Cuda 설치파일 다운
 
 ```shell
@@ -86,7 +86,7 @@ source ~/.bashrc
 nvcc --version
 ```
 
-# 5. cmake 최신버전 설치
+### 5. cmake 최신버전 설치
 
 ```shell
 wget https://cmake.org/files/v3.18/cmake-3.18.0.tar.gz
@@ -98,7 +98,7 @@ make install
 ```
 
 
-# 6. Boost 최신버전 설치
+### 6. Boost 최신버전 설치
 
 ```shell
 wget https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.gz
@@ -109,7 +109,7 @@ sudo bash b2.sh
 sudo bash b2.sh install
 ```
 
-# 7. VTK 8.2 설치
+### 7. VTK 8.2 설치
 
 ```shell
 wget https://www.vtk.org/files/release/8.2/VTK-8.2.0.tar.gz
@@ -123,7 +123,7 @@ make install
 ```
 
 
-# 8. OpenNI2 설치
+### 8. OpenNI2 설치
 
 ```shell
 git clone https://github.com/occipital/OpenNI2.git
@@ -139,7 +139,7 @@ cd Bin/x64-Release/
 ./SimpleRead
 ```
 
-# 9. PCL 설치
+### 9. PCL 설치
 
 ```shell
 apt-get install libflann-dev
@@ -157,7 +157,7 @@ make
 make install
 ```
 
-# 10. GPU-VOXELS 설치
+### 10. GPU-VOXELS 설치
 
 ```shell
 apt-get install cmake-qt-gui
