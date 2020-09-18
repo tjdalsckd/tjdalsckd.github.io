@@ -6,7 +6,7 @@ highlighter:      rouge
 
 # Setup
 title:            Minchang Sung
-tagline:          'A Jekyll theme'
+tagline:          '연구노트 / 생각정리 / 공부'
 description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
 url:              https://tjdalsckd.github.io
 baseurl:          ''
