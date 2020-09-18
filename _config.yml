@@ -5,7 +5,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            성민창 홈페이지
+title:            SMC
 tagline:          '연구노트 / 생각정리 / 공부'
 description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
 url:              https://tjdalsckd.github.io
@@ -17,8 +17,8 @@ baseurl:          ''
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Minchang Sung'
+  url:            http://github.com/tjdalsckd
 
 paginate:         5
 # paginate_path:    '/page:num'
