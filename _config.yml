@@ -7,7 +7,7 @@ highlighter:      rouge
 # Setup
 title:            SMC
 tagline:          '연구노트 / 생각정리 / 공부'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+description:      '연구노트 / 생각정리 / 공부'
 url:              https://tjdalsckd.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
