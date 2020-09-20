@@ -37,4 +37,6 @@ CXX_FLAGS = -O3 -DNDEBUG   -fPIC -O3 -Wall -std=gnu++11
 ```bash
 CXX_FLAGS = -O3 -DNDEBUG   -O3 -Wall -std=gnu++11
 ```
-빌드 후 example/icp_simple.so가 생성되었는
+빌드 후 example/icp_simple.so가 생성되었는지 확인
+
+
