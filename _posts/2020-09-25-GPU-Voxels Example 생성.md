@@ -66,7 +66,7 @@ add_executable (smc_example smc_example.cpp)
 
 # Link the executable to the library.
 # We currently also have to link against Boost and icl_core...
-target_link_libraries (gvl_linkage_test
+target_link_libraries (smc_example
     LINK_PUBLIC gvl_linkage_test_lib
     LINK_PUBLIC ${Boost_SYSTEM_LIBRARY}
     LINK_PUBLIC ${icl_core_LIBRARIES}
