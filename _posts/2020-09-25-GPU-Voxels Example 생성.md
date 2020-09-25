@@ -10,14 +10,17 @@ use_math: true
 
 
 ### Cmake 설정
+기존 예제 폴더 내의 CMakeLists.txt 파일을 새로 만든 예제 폴더에 옮기고 수정한다.
+
 ```bash
 mkdir smc_example
 cd smc_example
-cp ../example_how_to_link/CMakeList.txt .
+cp ../example_how_to_link/CMakeLists.txt .
 cp ../example_how_to_link/gvl_linkage* .
-gedit CMakeList.txt
+cp gvl_linkage_test.cpp smc_example.cpp
+gedit CMakeLists.txt
 ```
-
+CMakeLists.txt 파일에서 build할 파일 이름을 수정한다.
 ```bash
 # this is for emacs file handling -*- mode: cmake; indent-tabs-mode: nil -*-
 
@@ -73,5 +76,13 @@ target_link_libraries (gvl_linkage_test
 
 
 ```
+
+cmake-gui를 이용하여 gpu-voxelx와, icl-cores가 빌드된 폴더를 정한다.
+
+```bash
+
+cmake-gui .
+```
+
 
 ![Screenshot from 2020-09-25 15-28-45](https://user-images.githubusercontent.com/53217819/94234047-ddf60100-ff43-11ea-87d8-f059118e3f9d.png)
