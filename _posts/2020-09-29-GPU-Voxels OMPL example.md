@@ -53,3 +53,52 @@ cd /home/sung/workspace/gpu-voxels/build/bin
 gpu_voxels_visualizer가 실행된 후에 gvl_ompl_planning 터미널에서 Enter를 누르면 example이 실행된다.
 
 ![Screenshot from 2020-09-29 19-54-24](https://user-images.githubusercontent.com/53217819/94549714-9944cf80-028d-11eb-802f-ca3ea17cf53c.png)
+
+### Indy7 urdf 적용하기
+미리 수정된 indy7 urdf파일을 다운 받는다.
+```bash
+cd /home/sung/workspace/gpu-voxels/packages/gpu_voxels/models
+git clone https://github.com/tjdalsckd/gpu-voxels-indy7
+```
+
+```bash
+gedit /home/sung/workspace/gpu-voxels/gvl_ompl_planning/gvl_ompl_planner_helper.cpp
+```
+60번째 줄을 다음과 같이 변경한다.
+```bash
+line 60:     gvl->addRobot("myUrdfRobot", "indy7_coarse/indy7.urdf", true);
+```
+
+```bash
+cd /home/sung/workspace/gpu-voxels/gvl_ompl_planning
+make -j16
+```
+### constraint 변경
+
+```bash
+gedit /home/sung/workspace/gpu-voxels/gvl_ompl_planning/gvl_ompl_planner_helper.cpp
+```
+gvl_ompl_planner_helper.cpp 파일에서 85부터 87줄은 박스 형태의 Constraint를 추가하는 부분이다.
+박스의 시작점과 끝점을 Vector3f로 입력하여 추가할 수 있다.
+
+```bash
+line 85:    gvl->insertBoxIntoMap(Vector3f(1.0,1.0,0.0), Vector3f(1.2,1.2,1.2), "myEnvironmentMap", eBVM_OCCUPIED, 2);
+line 86:    gvl->insertBoxIntoMap(Vector3f(1.8,1.8,0.0), Vector3f(2.0,2.0,1.2), "myEnvironmentMap", eBVM_OCCUPIED, 2);
+line 87:    gvl->insertBoxIntoMap(Vector3f(0.0,0.0,0.0), Vector3f(3.0,3.0,0.01), "myEnvironmentMap", eBVM_OCCUPIED, 2);
+```
+### goal joint position 변경
+목표 joint 각도 변경은 gvl_ompl_planner.cpp파일에서 수정할 수 있다.
+
+```bash
+gedit /home/sung/workspace/gpu-voxels/gvl_ompl_planning/gvl_ompl_planner.cpp
+```
+
+```bash
+line 85:    goal[0] = 3.141592/2;
+line 86:    goal[1] = -0.5;
+line 87:    goal[2] = 0.0;
+line 88:    goal[3] = 0.0;
+line 89:    goal[4] = 0.0;
+line 90:    goal[5] = 0.0;
+```
+
