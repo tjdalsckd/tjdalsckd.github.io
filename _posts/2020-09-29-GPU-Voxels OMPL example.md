@@ -6,6 +6,9 @@ tags:
   - Jekyll
   - LaTeX
 use_math: true
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 이 포스트에서는 뉴로메카사의 Indy7을 이용하여 GPU-Voxels 라이브러리를 활용한 Motion Planning 예제를 만든다.
