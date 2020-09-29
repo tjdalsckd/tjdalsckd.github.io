@@ -6,6 +6,7 @@ tags:
   - Jekyll
   - LaTeX
 use_math: true
+Shell:      console, shell
 sitemap :
   changefreq : daily
   priority : 1.0
