@@ -6,8 +6,8 @@ highlighter:      rouge
 
 # Setup
 title:            SMC
-tagline:          '연구노트 / 생각정리 / 공부'
-description:      '연구노트 / 생각정리 / 공부'
+tagline:          '연구노트 / 정리 / 공부'
+description:      '연구노트 / 정리 / 공부'
 url:              https://tjdalsckd.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
