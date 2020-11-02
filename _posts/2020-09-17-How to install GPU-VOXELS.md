@@ -186,3 +186,6 @@ GLM_INCLUDE_DIR이 설정되어 있는지 확인
 export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels/models/
 
 ```
+### 11. 추가 명령어
+ ./urdf_loader_ros_listener -r -135 -p 0 -y 90
+ 
