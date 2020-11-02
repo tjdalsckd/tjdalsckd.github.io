@@ -190,5 +190,6 @@ export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels
 
 ```shell
  ./urdf_loader_ros_listener -r -135 -p 0 -y 90
+  ./distance_ros_demo-r -135 -p 0 -y 90
  
 ```
