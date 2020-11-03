@@ -130,8 +130,13 @@ chmod 777 cuda_10.0.130_410.48_linux.run
 설치 중 Nvidia Driver 설치는 No를 하고 다른 사항은 모두 Yes
 ```shell
 gedit ~/.bashrc
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-export PATH=/usr/local/cuda/bin:$PATH
+```
+다음의 내용을 맨 아래에 추가
+
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+    export PATH=/usr/local/cuda/bin:$PATH
+
+```shell
 source ~/.bashrc
 nvcc --version
 ```
