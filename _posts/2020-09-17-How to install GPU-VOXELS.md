@@ -240,6 +240,7 @@ make install
 ```shell
 apt-get install cmake-qt-gui
 apt-get install libglew-dev
+apt-get install libglm-dev
 sudo apt-get install qt5-default
 sudo rm /usr/lib/x86_64-linux-gnu/libGL.so
 sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
