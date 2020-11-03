@@ -193,6 +193,7 @@ git clone https://github.com/occipital/OpenNI2.git
 cd OpenNI2
 sudo apt-get install g++
 sudo apt-get install libusb-1.0-0-dev
+sudo apt-get install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev libglfw3-dev libglfw3
 apt-get install openjdk-8-jre
 apt-get install openjdk-8-jdk
 sudo apt-get install graphviz
