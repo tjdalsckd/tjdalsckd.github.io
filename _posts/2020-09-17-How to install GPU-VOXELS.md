@@ -152,6 +152,7 @@ Cuda compilation tools, release 10.0, V10.0.130
 ### 5. cmake 최신버전 설치
 
 ```shell
+apt-get install libssl-dev
 wget https://cmake.org/files/v3.18/cmake-3.18.0.tar.gz
 tar -zxvf cmake-3.18.0.tar.gz
 cd cmake-3.18.0
