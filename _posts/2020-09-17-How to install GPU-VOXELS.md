@@ -65,7 +65,7 @@ nvidia-smi
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-# 한글 키보드 설치
+### 한글 키보드 설치
 
 Ubuntu 16.04 LTS 버전 기준으로 한글 키보드를 설치하는 방법입니다.
 
@@ -85,7 +85,7 @@ sudo apt-get install fcitx-hangul
 
 <br>
 
-## 오른쪽 한/영키(Alt 키)를 이용한 한/영 전환
+#### 오른쪽 한/영키(Alt 키)를 이용한 한/영 전환
 
 Unbuntu에서는 기본적으로 오른쪽 <kbd>Alt</kbd> 키가 커맨드 실행 기능으로 맵핑이 되어 있습니다. 한/영 전환 키로 활용하고 싶으면 다음과 같이 세팅하시면 됩니다.
 
@@ -97,7 +97,7 @@ Unbuntu에서는 기본적으로 오른쪽 <kbd>Alt</kbd> 키가 커맨드 실�
 
 <br>
 
-## fcitx 설정
+#### fcitx 설정
 
 * 오른쪽 상단 상태바에서 `fcitx` 아이콘 선택 → `Configure Current Input Method` 선택
 * `+` 버튼을 눌러 `Hangul` 항목 추가(`+` 버튼 누른 창에서 `Only Show Current Language` 체크 버튼 해제해야 보임)
