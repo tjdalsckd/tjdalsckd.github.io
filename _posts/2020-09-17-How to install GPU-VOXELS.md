@@ -135,10 +135,18 @@ gedit ~/.bashrc
 
     export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
     export PATH=/usr/local/cuda/bin:$PATH
-
+다시 터미널에서 다음과 같이 입력
 ```shell
 source ~/.bashrc
 nvcc --version
+```
+결과가 다음과 같이 나와야한다.
+
+```shell
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2018 NVIDIA Corporation
+Built on Sat_Aug_25_21:08:01_CDT_2018
+Cuda compilation tools, release 10.0, V10.0.130
 ```
 
 ### 5. cmake 최신버전 설치
