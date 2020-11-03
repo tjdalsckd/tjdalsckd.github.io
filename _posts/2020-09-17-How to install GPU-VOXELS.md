@@ -192,6 +192,7 @@ make install
 ### 8. OpenNI2 설치
 
 ```shell
+sudo apt-get install git
 git clone https://github.com/occipital/OpenNI2.git
 cd OpenNI2
 sudo apt-get install g++
