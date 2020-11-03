@@ -168,8 +168,8 @@ wget https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.gz
 tar -zxvf boost_1_74_0.tar.gz
 cd boost_1_74_0
 sudo bash bootstrap.sh
-sudo bash b2.sh
-sudo bash b2.sh install
+./b2.sh
+./b2.sh install
 ```
 
 ### 7. VTK 8.2 설치
