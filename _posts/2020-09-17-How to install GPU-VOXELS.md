@@ -177,6 +177,7 @@ sudo bash bootstrap.sh
 
 ```shell
 sudo apt-get install libgl1-mesa-dev
+sudo apt-get install libxt-dev 
 wget https://www.vtk.org/files/release/8.2/VTK-8.2.0.tar.gz
 tar -zxvf VTK-8.2.0.tar.gz
 cd VTK-8.2.0
