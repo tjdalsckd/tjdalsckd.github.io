@@ -233,6 +233,7 @@ cmake ..
 make 
 make install
 ```
++ 주의) cmake-gui를 이용하여 with openni2를 설정해서 build해야 gpu-voxel 설치시 openni-grubber.h 오류가 발생하지 않는다.
 
 ### 10. GPU-VOXELS 설치
 
