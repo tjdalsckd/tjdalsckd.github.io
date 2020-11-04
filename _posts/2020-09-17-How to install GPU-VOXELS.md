@@ -155,15 +155,15 @@ make install
 ```
 
 
-### 6. Boost 1.69 버전 설치
+### 6. Boost 1.58 버전 설치
 
 
 
 
 ```shell
-wget https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.gz
-tar -zxvf boost_1_69_0.tar.gz
-cd boost_1_69_0
+wget https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.gz
+tar -zxvf boost_1_58_0.tar.gz
+cd boost_1_58_0
 sudo bash bootstrap.sh
 ./b2.sh
 ./b2.sh install
