@@ -239,7 +239,37 @@ make install
 ```
 + 주의) cmake-gui를 이용하여 with openni2를 설정해서 build해야 gpu-voxel 설치시 openni-grubber.h 오류가 발생하지 않는다.
 
-### 10. GPU-VOXELS 설치
+### 10. OROCOS_KDL install
+
+```shell
+
+git clone https://github.com/orocos/orocos_kinematics_dynamics.git
+cd  orocos_kinematics_dynamics
+mkdir build
+cd build
+cmake ..
+make -j16
+make install
+
+```
+
+
+### 11. OROCOS_KDL install( if you want)
+
+```shell
+
+git clone https://github.com/orocos/orocos_kinematics_dynamics.git
+cd  orocos_kinematics_dynamics
+mkdir build
+cd build
+cmake ..
+make -j16
+make install
+
+```
+
+
+### 12. GPU-VOXELS 설치
 
 ```shell
 apt-get install cmake-qt-gui
@@ -257,6 +287,9 @@ cmake ..
 cmake-gui ..
 ```
 
+kdl_parser_DIR  = /opt/ros/kinetic/share/kdl_parser/cmake
+orocos_kdl_DIR = /opt/ros/kinetic/share/orocos_kdl
+
 ENABLE_CUDA에 체크되어있는지 확인
 
 ![1](https://user-images.githubusercontent.com/53217819/93412302-ddbc8c80-f8d7-11ea-85c3-43837a1a6b4b.png)
@@ -269,12 +302,12 @@ GLM_INCLUDE_DIR이 설정되어 있는지 확인
 export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels/models/
 
 ```
-### 11. 추가 명령어
+### 13. 추가 명령어
 
 ```shell
  ./urdf_loader_ros_listener -r -135 -p 0 -y 90
   ./distance_ros_demo-r -135 -p 0 -y 90
  
 ```
-### 12.
+### 14. installation guides
 https://github.com/roboticslab-uc3m/installation-guides
