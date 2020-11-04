@@ -24,6 +24,7 @@ git clone https://github.com/neuromeka-robotics/indy-ros
 gpu-voxles 폴더에 있는 gvl_ompl_planning을 build한다.
 build를 성공하기 위해서는 먼저 ros가 설치되어 있으며 ros ompl을 설치해야 한다.
 ```bash
+apt-get install ros-kinetic-ompl
 cmake-gui .
 ```
 cmake-gui를 통해 library의 설치여부를 확인한다.
