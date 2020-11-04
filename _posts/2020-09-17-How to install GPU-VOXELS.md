@@ -219,7 +219,7 @@ cd Bin/x64-Release/
 ./SimpleRead
 ```
 
-### 9. PCL 설치
+### 9. PCL 1.9.1 설치
 
 ```shell
 sudo apt-get install libeigen3-dev
