@@ -65,6 +65,9 @@ nvidia-smi
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
+```shell
+sudo apt-get install ros-kinetic-moveit ros-kinetic-industrial-core ros-kinetic-moveit-visual-tools ros-kinetic-joint-state-publisher-gui ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control ros-kinetic-joint-state-controller ros-kinetic-effort-controllers ros-kinetic-position-controllers ros-kinetic-joint-trajectory-controller
+```
 ### 한글 키보드 설치
 
 ```shell
@@ -360,4 +363,5 @@ cd ~/catkin_ws/src && git clone https://github.com/neuromeka-robotics/indy-ros-e
 cd ~/catkin_ws
 catkin_make
 ```
+
 
