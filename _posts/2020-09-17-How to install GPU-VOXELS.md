@@ -363,5 +363,14 @@ cd ~/catkin_ws/src && git clone https://github.com/neuromeka-robotics/indy-ros-e
 cd ~/catkin_ws
 catkin_make
 ```
+### ros start
+```shell
+roslaunch indy_driver_py indy7_moveit_dcp.launch robot_ip:=192.168.0.7 robot_name:=NRMK-Indy7
+```
+
+ ```shell
+ roslaunch realsense2_camera demo_pointcloud.launch
+ ```
+
 
 
