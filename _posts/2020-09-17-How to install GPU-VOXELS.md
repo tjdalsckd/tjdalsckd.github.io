@@ -199,7 +199,11 @@ apt-get install openjdk-8-jre
 apt-get install openjdk-8-jdk
 sudo apt-get install graphviz
 make
-make install
+
+sudo ln -s $PWD/Bin/x64-Release/libOpenNI2.so /usr/local/lib/
+sudo ln -s $PWD/Bin/x64-Release/OpenNI2/ /usr/local/lib/ 
+sudo ln -s $PWD/Include /usr/local/include/OpenNI2
+ldconfig
 cd Bin/x64-Release/
 ./SimpleRead
 ```
@@ -207,12 +211,13 @@ cd Bin/x64-Release/
 ### 9. PCL 1.9.1 설치
 
 ```shell
+
 sudo apt-get install libeigen3-dev
 apt-get install libflann-dev
 sudo rm /usr/lib/x86_64-linux-gnu/libGL.so
 sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
-sudo rm -r libEGL.so
-sudo ln -s libEGL.so.1 libEGL.so
+sudo rm -r /usr/lib/libEGL.so
+sudo ln -s /usr/lib/x86_64-linux-gnu/libEGL.so.1 /usr/lib/x86_64-linux-gnu/libEGL.so
 sudo apt-get install g++ cmake cmake-gui doxygen mpi-default-dev openmpi-bin openmpi-common libeigen3-dev libboost-all-dev libvtk5.8-qt4 libvtk5.8 libqhull* libusb-dev libgtest-dev git-core freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev graphviz mono-complete qt-sdk libeigen3-dev
 sudo apt install libglew-dev
 sudo apt-get install libsqlite3-0 libpcap0.8  
