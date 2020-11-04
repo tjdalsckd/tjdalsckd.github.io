@@ -271,3 +271,5 @@ export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels
   ./distance_ros_demo-r -135 -p 0 -y 90
  
 ```
+### 12.
+https://github.com/roboticslab-uc3m/installation-guides
