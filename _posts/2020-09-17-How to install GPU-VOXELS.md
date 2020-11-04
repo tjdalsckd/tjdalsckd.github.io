@@ -287,8 +287,11 @@ cmake ..
 cmake-gui ..
 ```
 
+
 kdl_parser_DIR  = /opt/ros/kinetic/share/kdl_parser/cmake
+
 orocos_kdl_DIR = /opt/ros/kinetic/share/orocos_kdl
+
 
 ENABLE_CUDA에 체크되어있는지 확인
 
