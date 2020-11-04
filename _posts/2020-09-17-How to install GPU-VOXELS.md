@@ -217,7 +217,7 @@ cd Bin/x64-Release/
 sudo apt-get install libeigen3-dev
 apt-get install libflann-dev
 
-sudo rm -r /usr/lib/libEGL.so
+sudo rm -r /usr/lib/x86_64-linux-gnu/libEGL.so
 sudo ln -s /usr/lib/x86_64-linux-gnu/libEGL.so.1 /usr/lib/x86_64-linux-gnu/libEGL.so
 sudo apt-get install g++ cmake cmake-gui doxygen mpi-default-dev openmpi-bin openmpi-common libeigen3-dev libboost-all-dev libqhull* libusb-dev libgtest-dev git-core freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev graphviz mono-complete qt-sdk libeigen3-dev
 sudo apt install libglew-dev
