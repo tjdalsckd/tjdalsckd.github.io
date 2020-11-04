@@ -233,8 +233,10 @@ sudo apt install libglew-dev
 sudo apt-get install libsqlite3-0 libpcap0.8  
 sudo apt-get install libpcap-dev
 
-git clone https://github.com/PointCloudLibrary/pcl.git
-cd pcl
+wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.9.1.tar.gz
+tar xvf pcl-1.9.1.tar.gz
+
+cd pcl-pcl-1.9.1
 mkdir build
 cd build
 cmake ..
