@@ -325,3 +325,36 @@ Ubuntu 18 LTS:
 ```shell
 sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic main" -u
 ```
+
+```shell
+sudo apt-get install librealsense2 librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
+
+```
+
+```shell
+git clone https://github.com/IntelRealSense/librealsense.git
+cd librealsense
+mkdir build
+cd build 
+cmake ..
+make -j16
+make install
+```
+
+```shell
+sudo apt-get install ros-kinetic-ddynamic-reconfigure
+
+cd ~/catkin_ws/src
+git clone https://github.com/IntelRealSense/realsense-ros.git
+cd ../../
+catkin_make 
+```
+### indy-ros
+```shell
+apt-get install ros-kinetic-industrial-robot-client
+cd ~/catkin_ws/src && git clone -b release-2.3 https://github.com/neuromeka-robotics/indy-ros
+cd ~/catkin_ws/src && git clone https://github.com/neuromeka-robotics/indy-ros-examples
+cd ~/catkin_ws
+catkin_make
+```
+
