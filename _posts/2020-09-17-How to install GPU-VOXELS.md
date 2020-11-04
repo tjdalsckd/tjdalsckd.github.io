@@ -242,7 +242,7 @@ make install
 ```
 + 주의) cmake-gui를 이용하여 with openni2를 설정해서 build해야 gpu-voxel 설치시 openni-grubber.h 오류가 발생하지 않는다.
 
-### 10. OROCOS_KDL install
+### 10. OROCOS_KDL install( if you want)
 
 ```shell
 
@@ -257,22 +257,7 @@ make install
 ```
 
 
-### 11. OROCOS_KDL install( if you want)
-
-```shell
-
-git clone https://github.com/orocos/orocos_kinematics_dynamics.git
-cd  orocos_kinematics_dynamics
-mkdir build
-cd build
-cmake ..
-make -j16
-make install
-
-```
-
-
-### 12. GPU-VOXELS 설치
+### 11. GPU-VOXELS 설치
 
 ```shell
 apt-get install cmake-qt-gui
@@ -308,15 +293,17 @@ GLM_INCLUDE_DIR이 설정되어 있는지 확인
 export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels/models/
 
 ```
-### 13. 추가 명령어
+### 12. 추가 명령어
 
 ```shell
  ./urdf_loader_ros_listener -r -135 -p 0 -y 90
   ./distance_ros_demo-r -135 -p 0 -y 90
  
 ```
-### 14. installation guides
+### 13. installation guides
 https://github.com/roboticslab-uc3m/installation-guides
+
+
 
 ### librealsense install
 16.04
@@ -355,6 +342,8 @@ git clone https://github.com/IntelRealSense/realsense-ros.git
 cd ../../
 catkin_make 
 ```
+
+
 ### indy-ros
 ```shell
 apt-get install ros-kinetic-industrial-robot-client
