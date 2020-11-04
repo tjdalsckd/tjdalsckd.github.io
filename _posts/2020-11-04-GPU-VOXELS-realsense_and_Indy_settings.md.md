@@ -50,3 +50,5 @@ export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels
 ![Screenshot from 2020-11-04 20-29-25](https://user-images.githubusercontent.com/53217819/98106225-82247d80-1edc-11eb-82f0-df80183c5cdb.png)
 
 
+#### indy c++ build
+g++ -std=c++11 -o test.out test_smc.cpp IndyDCP.cpp IndyDCPConnector.cpp IndyDCPException.cpp
