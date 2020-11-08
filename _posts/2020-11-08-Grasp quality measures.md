@@ -43,4 +43,7 @@ Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라
 
 물체에 작용하는 torque 는 $\tau_i = p_i \cross F_i$ 이며 물체의 center of mass을 기준으로 작용한다. 이 때의 force 와 torqure를 묶어서 wrench vector $\omega_i = (F_i,\tau_i/\rho)^T$로 나타낸다. $\rho$는 wrench space의 metric이며 constant로 정의된다. $\rho$는 물체의 회전반경과 CM으로부터의 가장 먼 물체 표면의 점으로 기술된다. wrench vector의 dimension은 2D의 경우 $d = 3$, 3D의 경우 $d = 6 $이다.
 
+CM에서의 선속도와 회전 속도를 twist라고 부르며 다음과 같이 나타낸다. $\dot{x} = (v,w)^T $ twist는 2D의 경우 $R^3$ 3D의 경우 $R^6$에 속한다.
+
+
 
