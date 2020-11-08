@@ -22,6 +22,19 @@ Grasp Planning은 크게 두 가지 방식으로 나뉜다. 먼저 Empirical gra
 
 ### 3. Grasp Synthesis Algorithm의 특성
 #### * Disturbance resistance
+Grasp은 어떠한 방향에서 오는 Disturbance더라도 견뎌내야 한다. 즉 물체의 Immobility가 보장되어야만 한다.(Form closure, Force Closure)
+#### * Dexterity
+Hand를 이용하여 물체를 작업이 가능하도록 움직인다면 이를 Dextrous하다 라고 한다.
+#### * Equilibrium
+Grasp이 Equilibrium하다는 것은 물체에 가해지는 토크나 힘의 결과가 없는 경우를 의미한다.
+#### * Stability
+Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라지는 것을 Stable하다 한다.
 
-#### * 
+### 4. Basic background and nomenclature
+접촉저멩 작용하는 force는 물체에 대해서만 작용할 수 있다.(positivity constraint), 그리고 fingertip과 물체 사이의 접촉은 다음과 같다.
+#### Punctual contact without friction
+마찰이 없는 표면에 가해지는 force는 정확히 접촉 점 경계의 normal 벡터이다.
+#### Punctual contact with friction(hand contact)
+마찰이 있는 경우는 여러가지 모델로 표현이 가능하지만 주로 쓰이는 것은 Coulomb's friciotn cone 방식이다.
+#### Soft Contact
 
