@@ -39,7 +39,7 @@ Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라
 #### Soft Contact
 3D 물체에서만 가능한 분석으로 접촉 점에서 force 뿐만아니라 접촉 점 경계에서의 torque까지를 포함한 분석이다.
 
-각 접촉점에 적용되는 wrenches의 indepedent components의 숫자를 &r& 이라 했을 때에 
+각 접촉점에 적용되는 wrenches의 indepedent components의 숫자를 $r$ 이라 했을 때에 
 
 
 
