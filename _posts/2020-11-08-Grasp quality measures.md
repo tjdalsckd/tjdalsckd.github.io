@@ -31,10 +31,15 @@ Grasp이 Equilibrium하다는 것은 물체에 가해지는 토크나 힘의 결
 Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라지는 것을 Stable하다 한다.
 
 ### 4. Basic background and nomenclature
-접촉저멩 작용하는 force는 물체에 대해서만 작용할 수 있다.(positivity constraint), 그리고 fingertip과 물체 사이의 접촉은 다음과 같다.
+접촉점에 작용하는 force는 물체에 대해서만 작용할 수 있다.(positivity constraint), 그리고 fingertip과 물체 사이의 접촉은 다음과 같다.
 #### Punctual contact without friction
 마찰이 없는 표면에 가해지는 force는 정확히 접촉 점 경계의 normal 벡터이다.
 #### Punctual contact with friction(hand contact)
 마찰이 있는 경우는 여러가지 모델로 표현이 가능하지만 주로 쓰이는 것은 Coulomb's friciotn cone 방식이다.
 #### Soft Contact
+3D 물체에서만 가능한 분석으로 접촉 점에서 force 뿐만아니라 접촉 점 경계에서의 torque까지를 포함한 분석이다.
+
+각 접촉점에 적용되는 wrenches의 indepedent components의 숫자를 &r& 이라 했을 때에 
+
+
 
