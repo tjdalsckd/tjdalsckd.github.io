@@ -25,7 +25,7 @@
 body {
   background-attachment: fixed;
   background-color: $sidebar-bg-color;
-  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 15%), darken($sidebar-bg-color, 7%));
+  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 25%), darken($sidebar-bg-color, 15%));
   color: $sidebar-text-color;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,9 @@ body {
 .content {
   background: $body-bg;
   color: $body-color;
-  padding: $section-spacing;
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  padding-right: $section-spacing;
   padding-left: $section-spacing*0.5;
 }
 
