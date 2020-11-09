@@ -17,23 +17,23 @@ h6,
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 1rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-top: 1.5rem;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   margin-top: 1rem;
 }
 
@@ -121,7 +121,7 @@ a[href^='#fnref:'] {
 // Extend paragraphs with `.lead` for larger introductory text.
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
