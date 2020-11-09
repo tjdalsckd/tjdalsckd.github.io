@@ -46,5 +46,6 @@ Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라
 
 CM에서의 선속도와 회전 속도를 twist라고 부르며 다음과 같이 나타낸다. $\dot{x} = (v,w)^T $ twist는 2D의 경우 $R^3$ 3D의 경우 $R^6$에 속한다.
 
+![그림2](https://user-images.githubusercontent.com/53217819/98537817-318e9500-22cd-11eb-8ed2-437ad3c075ef.png)
 
 
