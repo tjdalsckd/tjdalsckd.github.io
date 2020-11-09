@@ -48,4 +48,4 @@ CM에서의 선속도와 회전 속도를 twist라고 부르며 다음과 같이
 
 ![그림2](https://user-images.githubusercontent.com/53217819/98537817-318e9500-22cd-11eb-8ed2-437ad3c075ef.png)
 
-
+![그림3](https://user-images.githubusercontent.com/53217819/98538051-87fbd380-22cd-11eb-81cf-4fb44173bd21.png)
