@@ -28,7 +28,7 @@ body {
   background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 100%), darken($sidebar-bg-color, 7%));
   color: $sidebar-text-color;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
 }
 
