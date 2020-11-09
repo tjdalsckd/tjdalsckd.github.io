@@ -46,7 +46,15 @@ Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라
 
 CM에서의 선속도와 회전 속도를 twist라고 부르며 다음과 같이 나타낸다. $\dot{x} = (v,w)^T $ twist는 2D의 경우 $R^3$ 3D의 경우 $R^6$에 속한다.
 
+각 finger의 joint에 작용하는 토크는 다음과 같이 표기한다.
+$T = [ T _ { 1 j } ^ { T } \ldots T _ { n j } ^ { T } ] ^ { T } \in R ^ { n m }$
+
 ![그림2](https://user-images.githubusercontent.com/53217819/98538175-b679ae80-22cd-11eb-8993-c9aec3b116cd.png)
+
+i개의 fingertip에서의 contact force 는 $f_i$ 로 표기하며 마찰력이 있는 경우 contact force component는 다음과 같이 표기한다.
+$f = [ f _ { 1 k } ^ { T } \ldots f _ { n k } ^ { T } ] ^ { T } \in R ^ { n r } ( k = 1 , \ldots , r )$
+i개의 fingertip에서의 contact point들의 velocity component는 다음과 같이 표기한다.
+$v = [ v _ { 1 k } ^ { T } \ldots v _ { n k } ^ { T } ] ^ { T } \in R ^ { n r }$
 
 
 ![그림3](https://user-images.githubusercontent.com/53217819/98538051-87fbd380-22cd-11eb-81cf-4fb44173bd21.png)
