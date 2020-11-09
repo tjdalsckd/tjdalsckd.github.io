@@ -25,7 +25,7 @@
 body {
   background-attachment: fixed;
   background-color: $sidebar-bg-color;
-  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 7%), darken($sidebar-bg-color, 7%));
+  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 15%), darken($sidebar-bg-color, 7%));
   color: $sidebar-text-color;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ body {
 // Container is flexbox as well -- we want content div to stretch and fill
 .container {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0.5 0.5 auto;
   flex-direction: column;
 
   > .content {
