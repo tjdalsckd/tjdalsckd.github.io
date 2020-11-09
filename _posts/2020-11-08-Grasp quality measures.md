@@ -58,3 +58,6 @@ i개의 fingertip에서의 contact point들의 velocity component는 다음과 �
 $v = [ v _ { 1 k } ^ { T } \ldots v _ { n k } ^ { T } ] ^ { T } \in R ^ { n r }$
 
 ![그림3](https://user-images.githubusercontent.com/53217819/98538051-87fbd380-22cd-11eb-81cf-4fb44173bd21.png)
+
+### 5. Grasp Matrix $G$
+![그림4](https://user-images.githubusercontent.com/53217819/98540105-c1820e00-22d0-11eb-9781-5609de7effd3.png)
