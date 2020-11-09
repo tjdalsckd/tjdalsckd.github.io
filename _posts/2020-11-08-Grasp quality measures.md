@@ -66,13 +66,24 @@ $\nu = [ \nu _ { 1 k } ^ { T } \ldots \nu _ { n k } ^ { T } ] ^ { T } \in R ^ { 
 #### Contact Jacobian
 
 Joint velocity로부터 Contact Points의 velocity로 변환해주는 Jacobian
+
 $v = J _ { h } \dot { \theta }$
+
 $J _ { h } = \operatorname { diag } [ J _ { 1 } , \ldots , J _ { i } ] \in R ^ { n r \times n m }$
 
 #### Grasp Matrix $G$
 
 Object의 Twist로부터 Contact Points의 Velocity로 변환해주는 Jacobian $G^T$
+
 $nu = G ^ { T } \dot { x }$
+
 $G \in R ^ { d \times n r }$
+
+
+$\left. \begin{array}{l}{ J _ { h } \dot { \theta } = G ^ { T } \dot { x } }\\{ \dot { x } = ( G ^ { T } ) ^ { + } v + N ( G ^ { T } ) v _ { 0 } \quad , N ( G ^ { T } ) = I - ( G ^ { T } ) ^ { + } ( G ^ { T } ) }\end{array} \right.$
+
+$
+\left. \begin{array} { l } { N ( G ^ { T } ) = 0 , \text { or equivalently, that } \operatorname { rank } ( G ) = d } \\ { \dot { x } = ( G ^ { T } ) ^ { + } v } \\ { \dot { x } = H \dot { \theta } \quad \quad \text { where } H = ( G ^ { T } ) ^ { + } J _ { h } \in R ^ { d \times n m } } \end{array} \right.
+$
 
 
