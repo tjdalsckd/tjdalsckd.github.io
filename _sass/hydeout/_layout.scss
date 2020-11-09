@@ -51,6 +51,7 @@ body {
   background: $body-bg;
   color: $body-color;
   padding: $section-spacing;
+  padding-left: $section-spacing*2;
 }
 
 // Container is flexbox as well -- we want content div to stretch and fill
@@ -62,6 +63,7 @@ body {
   > .content {
     flex-grow: 1;
     padding-bottom: $section-spacing * 2;
+    
   }
 }
 
