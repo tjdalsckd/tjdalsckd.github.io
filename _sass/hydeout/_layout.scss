@@ -25,7 +25,7 @@
 body {
   background-attachment: fixed;
   background-color: $sidebar-bg-color;
-  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 7%), darken($sidebar-bg-color, 1%));
+  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 15%), darken($sidebar-bg-color, 7%));
   color: $sidebar-text-color;
   display: flex;
   flex-direction: column;
@@ -204,7 +204,7 @@ body {
     min-height: 100vh;
     padding:
       $section-spacing * 2
-      $section-spacing * 5
+      $section-spacing * 10
       0;
 
     @if $layout-reverse {
@@ -230,7 +230,7 @@ body {
     }
 
     > * {
-      max-width: 60rem;
+      max-width: 80rem;
       padding: 0;
     }
   }
