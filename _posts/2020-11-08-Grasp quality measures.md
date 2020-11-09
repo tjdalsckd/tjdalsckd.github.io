@@ -89,9 +89,7 @@ $G \in R ^ { d \times n r }$
 
 $\left. \begin{array}{l}{ J _ { h } \dot { \theta } = G ^ { T } \dot { x } }\\{ \dot { x } = ( G ^ { T } ) ^ { + } v + N ( G ^ { T } ) v _ { 0 } \quad , N ( G ^ { T } ) = I - ( G ^ { T } ) ^ { + } ( G ^ { T } ) }\end{array} \right.$
 
-$
 
-\left. \begin{array} { l } { N ( G ^ { T } ) = 0 , \text { or equivalently, that } \operatorname { rank } ( G ) = d } \\ { \dot { x } = ( G ^ { T } ) ^ { + } v } \\ { \dot { x } = H \dot { \theta } \quad \quad \text { where } H = ( G ^ { T } ) ^ { + } J _ { h } \in R ^ { d \times n m } } \end{array} \right.
-$
+$\left. \begin{array} { l } { N ( G ^ { T } ) = 0 , \text { or equivalently, that } \operatorname { rank } ( G ) = d } \\ { \dot { x } = ( G ^ { T } ) ^ { + } v } \\ { \dot { x } = H \dot { \theta } \quad \quad \text { where } H = ( G ^ { T } ) ^ { + } J _ { h } \in R ^ { d \times n m } } \end{array} \right.$
 
 
