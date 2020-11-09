@@ -51,13 +51,14 @@ body {
   background: $body-bg;
   color: $body-color;
   padding: $section-spacing;
-  padding-left: $section-spacing*2;
+  padding-right:$section-spacing*0.5;
+  padding-left: $section-spacing*1.5;
 }
 
 // Container is flexbox as well -- we want content div to stretch and fill
 .container {
   display: flex;
-  flex: 0.5 3 auto;
+  flex: 0.5 2 auto;
   flex-direction: column;
 
   > .content {
