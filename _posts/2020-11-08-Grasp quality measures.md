@@ -55,9 +55,24 @@ i개의 fingertip에서의 contact force 는 $f_i$ 로 표기하며 마찰력이
 $f = [ f _ { 1 k } ^ { T } \ldots f _ { n k } ^ { T } ] ^ { T } \in R ^ { n r } ( k = 1 , \ldots , r )$
 
 i개의 fingertip에서의 contact point들의 velocity component는 다음과 같이 표기한다.
-$v = [ v _ { 1 k } ^ { T } \ldots v _ { n k } ^ { T } ] ^ { T } \in R ^ { n r }$
+$\nu = [ \nu _ { 1 k } ^ { T } \ldots \nu _ { n k } ^ { T } ] ^ { T } \in R ^ { n r }$
 
-![그림3](https://user-images.githubusercontent.com/53217819/98538051-87fbd380-22cd-11eb-81cf-4fb44173bd21.png)
+![그림3](https://user-images.githubusercontent.com/53217819/98540689-ab288200-22d1-11eb-84cc-ccb5d96eb8f9.png)
 
 ### 5. Grasp Matrix $G$
+
 ![그림4](https://user-images.githubusercontent.com/53217819/98540105-c1820e00-22d0-11eb-9781-5609de7effd3.png)
+
+#### Contact Jacobian
+
+Joint velocity로부터 Contact Points의 velocity로 변환해주는 Jacobian
+$v = J _ { h } \dot { \theta }$
+$J _ { h } = \operatorname { diag } [ J _ { 1 } , \ldots , J _ { i } ] \in R ^ { n r \times n m }$
+
+#### Grasp Matrix $G$
+
+Object의 Twist로부터 Contact Points의 Velocity로 변환해주는 Jacobian $G^T$
+$nu = G ^ { T } \dot { x }$
+$G \in R ^ { d \times n r }$
+
+
