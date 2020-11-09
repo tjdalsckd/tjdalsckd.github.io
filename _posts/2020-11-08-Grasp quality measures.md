@@ -85,4 +85,6 @@ $nu = G ^ { T } \dot { x }$
 
 $G \in R ^ { d \times n r }$
 
+dd
+
 
