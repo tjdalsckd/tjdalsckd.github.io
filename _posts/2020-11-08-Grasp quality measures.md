@@ -38,6 +38,7 @@ Disturbance에 의한 Object Position Error가 시간에 지남에 따라 사라
 마찰이 있는 경우는 여러가지 모델로 표현이 가능하지만 주로 쓰이는 것은 Coulomb's friciotn cone 방식이다.
 #### Soft Contact
 3D 물체에서만 가능한 분석으로 접촉 점에서 force 뿐만아니라 접촉 점 경계에서의 torque까지를 포함한 분석이다.
+![그림1](https://user-images.githubusercontent.com/53217819/98537729-0c9a2200-22cd-11eb-9adf-350aac2c558a.png)
 
 각 접촉점에 적용되는 wrenches의 indepedent components의 숫자를 $r$ 이라 했을 때에 $r = 1$일 때는 마찰이 없는 접촉, $r = 2$일 때는 마찰이 존재하는 2D 접촉, $r= 3$일 때는 마찰이 존재하는 3D 접촉, $r = 4$일 때는 soft contact이다.
 
