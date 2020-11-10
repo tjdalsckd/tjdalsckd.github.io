@@ -50,10 +50,7 @@ body {
 .content {
   background: $body-bg;
   color: $body-color;
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
-  padding-right: $section-spacing;
-  padding-left: $section-spacing*0.5;
+  padding: $section-spacing;
 }
 
 // Container is flexbox as well -- we want content div to stretch and fill
