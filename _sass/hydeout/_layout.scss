@@ -56,7 +56,7 @@ body {
 // Container is flexbox as well -- we want content div to stretch and fill
 .container {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0.5 1 auto;
   flex-direction: column;
 
   > .content {
