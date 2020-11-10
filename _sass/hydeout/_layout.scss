@@ -25,7 +25,7 @@
 body {
   background-attachment: fixed;
   background-color: $sidebar-bg-color;
-  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 25%), darken($sidebar-bg-color, 15%));
+  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 7%), darken($sidebar-bg-color, 7%));
   color: $sidebar-text-color;
   display: flex;
   flex-direction: column;
@@ -56,13 +56,12 @@ body {
 // Container is flexbox as well -- we want content div to stretch and fill
 .container {
   display: flex;
-  flex: 0.5 2 auto;
+  flex: 1 1 auto;
   flex-direction: column;
 
   > .content {
     flex-grow: 1;
     padding-bottom: $section-spacing * 2;
-    
   }
 }
 
@@ -205,7 +204,7 @@ body {
     min-height: 100vh;
     padding:
       $section-spacing * 2
-      $section-spacing * 10
+      $section-spacing * 2
       0;
 
     @if $layout-reverse {
@@ -231,7 +230,7 @@ body {
     }
 
     > * {
-      max-width: 70rem;
+      max-width: 38rem;
       padding: 0;
     }
   }
