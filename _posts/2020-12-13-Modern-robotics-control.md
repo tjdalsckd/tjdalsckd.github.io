@@ -16,7 +16,7 @@ https://github.com/tjdalsckd/indy7_matlab
 
 
 
-'''bash
+```bash
 clc; clear;
 thetalist = [0;pi/2;0;0;0;0];
 dthetalist = [0.1; 0.2; 0.3;0.1;0.1;0.1];
@@ -151,8 +151,7 @@ frame = getframe(gcf);
    writeVideo(v,frame);
 end
 close(v);
-
-'''
+```
 
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/53217819/102008522-9c236c80-3d74-11eb-8cdf-ecf0cf1d97ce.gif)
