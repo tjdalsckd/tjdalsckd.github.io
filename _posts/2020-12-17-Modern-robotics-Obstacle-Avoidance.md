@@ -1,5 +1,5 @@
 ---
-title: "Indy7 Control matlab 코드"
+title: "Inverse Jacobian을 이용한 Obstacle Avoidance Trajectory 생성 matlab 코드"
 tags:
   - Blog
   - MathJax
