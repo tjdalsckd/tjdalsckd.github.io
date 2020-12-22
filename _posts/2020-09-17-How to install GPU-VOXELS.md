@@ -266,8 +266,16 @@ apt-get install libglm-dev
 sudo apt-get install qt5-default
 sudo rm /usr/lib/x86_64-linux-gnu/libGL.so
 sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
-
+```
+Ubuntu 16.04
+```shell
 git clone https://github.com/fzi-forschungszentrum-informatik/gpu-voxels.git
+```
+Ubuntu 18.04
+```shell
+git clone https://github.com/fzi-forschungszentrum-informatik/gpu-voxels.git
+```
+```shell
 cd gpu-voxels/
 mkdir build
 cd build/
@@ -293,6 +301,23 @@ GLM_INCLUDE_DIR이 설정되어 있는지 확인
 export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels/models/
 
 ```
+
+
++ Ubuntu 18.04 install
+
+```shell
+mv /usr/include/eigen3/Eigen /usr/include/eigen3/Eigen_backup
+```
+install eigen 3.3.9
+```shell
+  wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz
+  tar xvf eigen-3.3.9.tar.gz
+  cd eigen-3.3.9
+  make -j16
+  make install
+```
+
+
 ### 12. 추가 명령어
 
 ```shell
