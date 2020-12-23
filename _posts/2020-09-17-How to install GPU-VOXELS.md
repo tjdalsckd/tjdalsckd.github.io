@@ -208,7 +208,7 @@ sudo bash bootstrap.sh
 ./b2 install
 ```
 
-+ boost 1.68 install
++ boost 1.65 install
 
 ```shell
 wget http://dl.bintray.com/boostorg/release/1.65.0/source/boost_1_65_0.tar.gz
