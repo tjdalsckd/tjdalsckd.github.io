@@ -204,8 +204,19 @@ wget https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.
 tar -zxvf boost_1_58_0.tar.gz
 cd boost_1_58_0
 sudo bash bootstrap.sh
-./b2.sh
-./b2.sh install
+./b2
+./b2 install
+```
+
++ boost 1.68 install
+
+```shell
+wget http://dl.bintray.com/boostorg/release/1.65.0/source/boost_1_65_0.tar.gz
+tar -zxvf boost_1_65_0.tar.gz
+cd boost_1_65_0
+sudo bash bootstrap.sh
+./b2
+./b2 install
 ```
 
 ### 7. VTK 8.2 설치
