@@ -61,6 +61,9 @@ nvidia-smi
 ```
 ### 3. ROS Kinetic 설치
 
+ROS는 root 권한으로 설치 시 오류가 발생할 수 있으나 대부분 해결 가능한 경우이다. 
+user권한으로 설치 시 다양한 라이브러리들과의 결합 시 보다 심각한 오류가 발생할 수 있음.(root로 설치 하는 것을 추천)
+
 ```shell
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
@@ -68,6 +71,39 @@ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_
 ```shell
 sudo apt-get install ros-kinetic-moveit ros-kinetic-industrial-core ros-kinetic-moveit-visual-tools ros-kinetic-joint-state-publisher-gui ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control ros-kinetic-joint-state-controller ros-kinetic-effort-controllers ros-kinetic-position-controllers ros-kinetic-joint-trajectory-controller
 ```
+ROS Melodic install
+```shell
+
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list
+
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt-get install python-pip
+
+sudo pip install -U rosdep
+
+sudo rosdep init
+
+sudo rosdep update
+
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+cd ~
+
+mkdir -p catkin_ws/src
+cd catkin_ws
+catkin_make
+
+
+```
+
 ### 한글 키보드 설치
 
 ```shell
