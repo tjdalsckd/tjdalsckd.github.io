@@ -421,7 +421,29 @@ git clone https://github.com/IntelRealSense/realsense-ros.git
 cd ../../
 catkin_make 
 ```
+### Azure Kinect install
+```shell
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
+
+sudo apt-get update
+
+sudo apt install k4a-tools
+
+sudo apt install libk4a1.4
+
+sudo apt install libk4a1.4-dev
+
+cd ~/catkin_ws/src
+
+git clone https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
+
+cd ../
+
+catkin_make
+
+```
 
 ### indy-ros
 ```shell
