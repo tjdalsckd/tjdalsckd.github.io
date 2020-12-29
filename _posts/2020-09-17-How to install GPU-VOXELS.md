@@ -26,6 +26,7 @@ sitemap :
 https://www.nvidia.com/Download/Find.aspx?lang=en-us 에서 자신의 그래픽 카드 종류와 Ubuntu 버전에 알맞는 드라이버 파일('NVIDIA-Linux-x86_64-xxx.xxx.run') 다운로드.
 
 ```shell
+sudo apt-get update
 sudo apt-get remove nvidia* && sudo apt autoremove 
 sudo apt-get install dkms build-essential linux-headers-generic
 sudo gedit /etc/modprobe.d/blacklist.conf
