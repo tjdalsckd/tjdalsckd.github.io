@@ -301,6 +301,20 @@ make install
 
 ```
 
++ Ubuntu 18.04 install
+
+```shell
+mv /usr/include/eigen3/Eigen /usr/include/eigen3/Eigen_backup
+```
+install eigen 3.3.9
+```shell
+  wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz
+  tar xvf eigen-3.3.9.tar.gz
+  cd eigen-3.3.9
+  make -j16
+  make install
+```
+
 
 ### 11. GPU-VOXELS 설치
 
@@ -347,20 +361,6 @@ export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels
 
 ```
 
-
-+ Ubuntu 18.04 install
-
-```shell
-mv /usr/include/eigen3/Eigen /usr/include/eigen3/Eigen_backup
-```
-install eigen 3.3.9
-```shell
-  wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz
-  tar xvf eigen-3.3.9.tar.gz
-  cd eigen-3.3.9
-  make -j16
-  make install
-```
 
 
 ### 12. 추가 명령어
