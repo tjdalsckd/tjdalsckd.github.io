@@ -203,7 +203,7 @@ make install
 
 ### 6. Boost 1.58 버전 설치
 
-
+ubuntu 16.04
 
 
 ```shell
@@ -215,16 +215,7 @@ sudo bash bootstrap.sh
 ./b2 install
 ```
 
-+ boost 1.65 install
 
-```shell
-wget http://dl.bintray.com/boostorg/release/1.65.0/source/boost_1_65_0.tar.gz
-tar -zxvf boost_1_65_0.tar.gz
-cd boost_1_65_0
-sudo bash bootstrap.sh
-./b2
-./b2 install
-```
 
 ### 7. VTK 8.2 설치
 
@@ -237,7 +228,7 @@ cd VTK-8.2.0
 mkdir build
 cd build
 cmake ..
-make
+make -j16
 make install
 ```
 
@@ -262,7 +253,7 @@ sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
 sudo rm -r /usr/lib/x86_64-linux-gnu/libEGL.so
 sudo ln -s /usr/lib/x86_64-linux-gnu/libEGL.so.1 /usr/lib/x86_64-linux-gnu/libEGL.so
 
-make
+make -j16
 
 sudo ln -s $PWD/Bin/x64-Release/libOpenNI2.so /usr/local/lib/
 sudo ln -s $PWD/Bin/x64-Release/OpenNI2/ /usr/local/lib/ 
@@ -291,7 +282,7 @@ cd pcl-pcl-1.9.1
 mkdir build
 cd build
 cmake ..
-make 
+make -j16
 make install
 ```
 + 주의) cmake-gui를 이용하여 with openni2를 설정해서 build해야 gpu-voxel 설치시 openni-grubber.h 오류가 발생하지 않는다.
