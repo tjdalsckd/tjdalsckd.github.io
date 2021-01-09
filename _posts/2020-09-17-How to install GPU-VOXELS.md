@@ -453,5 +453,5 @@ roslaunch indy_driver_py indy7_moveit_dcp.launch robot_ip:=192.168.0.7 robot_nam
  roslaunch realsense2_camera demo_pointcloud.launch
  ```
 
-
+https://ropiens.tistory.com/30
 
