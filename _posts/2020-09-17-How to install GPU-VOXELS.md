@@ -202,11 +202,25 @@ cd cmake-3.18.0
 make
 make install
 ```
+### 6.Eigen 설치
+
+```shell
+mv /usr/include/eigen3/Eigen /usr/include/eigen3/Eigen_backup
+```
+install eigen 3.3.9
+```shell
+  wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz
+  tar xvf eigen-3.3.9.tar.gz
+  cd eigen-3.3.9
+  make -j16
+  make install
+```
 
 
-### 6. Boost 1.58 버전 설치
 
-ubuntu 16.04
+### 7. Boost 1.58 버전 설치
+
+ubuntu 16.04에서만 설치.
 
 
 ```shell
@@ -220,7 +234,7 @@ sudo bash bootstrap.sh
 
 
 
-### 7. VTK 8.2 설치
+### 8. VTK 8.2 설치
 
 ```shell
 sudo apt-get install libgl1-mesa-dev
@@ -236,7 +250,7 @@ make install
 ```
 
 
-### 8. OpenNI2 설치
+### 9. OpenNI2 설치
 
 ```shell
 sudo apt-get install git
@@ -266,7 +280,7 @@ cd Bin/x64-Release/
 ./SimpleRead
 ```
 
-### 9. PCL 1.9.1 설치
+### 10. PCL 1.9.1 설치
 
 ```shell
 
@@ -290,7 +304,7 @@ make install
 ```
 + 주의) cmake-gui를 이용하여 with openni2를 설정해서 build해야 gpu-voxel 설치시 openni-grubber.h 오류가 발생하지 않는다.
 
-### 10. OROCOS_KDL install( if you want)
+### 11. OROCOS_KDL install( if you want)
 
 ```shell
 
@@ -304,22 +318,9 @@ make install
 
 ```
 
-+ Ubuntu 18.04 install
-
-```shell
-mv /usr/include/eigen3/Eigen /usr/include/eigen3/Eigen_backup
-```
-install eigen 3.3.9
-```shell
-  wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz
-  tar xvf eigen-3.3.9.tar.gz
-  cd eigen-3.3.9
-  make -j16
-  make install
-```
 
 
-### 11. GPU-VOXELS 설치
+### 12. GPU-VOXELS 설치
 
 ```shell
 apt-get install cmake-qt-gui
@@ -366,7 +367,7 @@ export GPU_VOXELS_MODEL_PATH=/home/sung/workspace/gpu-voxels/packages/gpu_voxels
 
 
 
-### 12. 추가 명령어
+### 13. 추가 명령어
 
 ```shell
  ./urdf_loader_ros_listener -r -135 -p 0 -y 90
