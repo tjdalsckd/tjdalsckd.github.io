@@ -81,6 +81,9 @@ sudo apt update
 
 sudo apt upgrade
 
+sudo apt install ros-melodic-desktop-full
+
+
 sudo apt-get install python-pip
 
 sudo pip install -U rosdep
