@@ -12,6 +12,7 @@ sitemap :
   priority : 1.0
 ---
 
+무게나 inertia를 고려하지 않은 단순 위치기반 토크 제어 코드입니다.
 
 
 ```bash
