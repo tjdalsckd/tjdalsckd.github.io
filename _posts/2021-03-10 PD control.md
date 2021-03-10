@@ -80,5 +80,4 @@ while p.isConnected():
 		p.stepSimulation()
 		time.sleep(timeStep)
 ```
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/53217819/102484872-36075400-40aa-11eb-9178-222ed005c758.gif)
-
+![Screenshot from 2021-03-10 20-54-59](https://user-images.githubusercontent.com/53217819/110625562-ed5fc280-81e2-11eb-870c-7bf2f35de5d7.png)
